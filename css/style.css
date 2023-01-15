@@ -11,6 +11,23 @@ body, HTML {
     font-family: Verdana, Arial, Tahoma, sans-serif;
 }
 
+.frame  {
+    position: relative;
+}
+
+.content    {
+    background-color: teal;
+    color: black;
+    height: 100%;
+    margin-left: 8em;
+}
+
+svg {  display: block;  width: 8em;  height: 100%;  color: teal;}
+
+.triangle {
+    float: left;
+}
+
 
 /* DROPBTN */
 .dropbtn {
