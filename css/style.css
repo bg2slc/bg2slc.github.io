@@ -6,9 +6,46 @@
  */
 
 body, HTML {
-    background-color: COLOR1;
-    color: COLOR2;
+    background-color: grey;
+    color: black;
     font-family: Verdana, Arial, Tahoma, sans-serif;
 }
 
 
+/* DROPBTN */
+.dropbtn {
+  background-color: maroon;
+  color: black;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: pink;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+.dropdown-content a:hover {background-color: purple;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: purple;}
