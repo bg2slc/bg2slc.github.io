@@ -23,17 +23,20 @@ div {
 
 
 .frame_outer  {
-    position: relative;
+    display: flex;
+    flex-direction: row;
     margin: 0;
 }
 .pictures {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 400px;
     height: 100vh;
 }
 
 .frame_inner {
+    position: relative;
     float: right;
 }
 
