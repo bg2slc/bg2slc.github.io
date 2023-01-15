@@ -1,0 +1,14 @@
+/**
+ *  COLOR1  -- blank space
+ *  COLOR2  -- main font color
+ *  COLOR3  -- 
+ *
+ */
+
+body, HTML {
+    background-color: COLOR1;
+    color: COLOR2;
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+}
+
+
