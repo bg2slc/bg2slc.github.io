@@ -17,41 +17,40 @@ body, html {
 
 }
 
-div {
-    position: absolute;
-}
-
-
 .frame_outer  {
+    z-index: -1;
+    position: absolute;
     display: flex;
     flex-direction: row;
-    margin: 0;
 }
 .pictures {
+    z-index: -1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 400px;
+    width: 26em;
     height: 100vh;
+    padding: 2em;
 }
 
 .frame_inner {
-    position: relative;
     float: right;
+
+    margin: 0;
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: row;
 }
 
 .triangle {
     width: 4em;
-    height: 100vh;
+    height: 100%;
 }
 
 .content    {
-    max-width: 30em;
-    float:right;
+    min-width: 26em;
     background-color: teal;
-    color: black;
-    height: 100vh;
-    margin-left: 4em;
 }
 
 
