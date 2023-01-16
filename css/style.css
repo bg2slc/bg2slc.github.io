@@ -10,49 +10,52 @@
  * [body [frame[pictures][svg][content]]]
  */
 body, html {
-    background-color: grey;
-    color: black;
-    font-family: Verdana, Arial, Tahoma, sans-serif;
     margin: 0;
-
-}
-
-.frame_outer  {
-    z-index: -1;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-}
-.pictures {
-    z-index: -1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 26em;
-    height: 100vh;
-    padding: 2em;
-}
-
-.frame_inner {
-    float: right;
-
-    margin: 0;
-    margin-left: auto;
-
-    display: flex;
-    flex-direction: row;
-}
-
-.triangle {
-    width: 4em;
+    padding: 0;
     height: 100%;
 }
 
-.content    {
-    min-width: 26em;
-    background-color: teal;
+.frameBG {
+    z-index: 0;
+    float: left;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 20em;
 }
 
+.frameFG {
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    margin-left: unset;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    animation: slide_into 3s forwards;
+    overflow-x: hidden;
+    will-change: transform;
+}
+
+.triangle {
+    width: 6em;
+    height: 100%;
+}
+
+.content {
+    background-color: teal;
+    height: 100%;
+    margin-left: -1px;
+    width: 40em;
+    min-width: 20em;
+}
+
+@keyframes slide_into {
+  from {transform: translateX(200%);}
+  to {transform: translateX(0%);}
+}
 
 
 /* DROPBTN */
