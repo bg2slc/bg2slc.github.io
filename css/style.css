@@ -22,7 +22,8 @@ h1,h2,h3,h4,h5 {
     font-family: "Bitstream Vera Serif", Georgia, serif;
 }
 h1 {
-    margin-left: 4em;
+    text-align: center;
+    margin: 0.8em auto 0.2em auto;
 }
 /**specifically for ranking bars **/
 h5 {
@@ -45,6 +46,7 @@ h5 {
 img.icon {
     display: block;
     margin: 0 auto;
+
     height: 2em;
     width: 2em;
 }
