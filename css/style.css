@@ -2,55 +2,100 @@
  *  COLOR1  -- blank space
  *  COLOR2  -- main font color
  *  COLOR3  -- 
- *
- */
-
-
-/** for following divs,
- * [body [frame[pictures][svg][content]]]
  */
 body, html {
     font-family: "Source Code Pro", "Courier New", "Open Sans", sans-serif;
+    font-size: large;
     color: black;
     margin: 0;
-    padding: 0;
-    height: 100%;
-}
-h1,h2,h3,h4 {
-    font-family: Lora, Georgia, serif;
-}
-
-body {
+    height: 100%; 
     background: repeating-linear-gradient(
-    45deg,
-    #88c0d0,
-    #88c0d0 10px,
-    #c0c0c0 10px,
-    #c0c0c0 20px
+        45deg,
+        #88c0d0,
+        #88c0d0 10px,
+        #c0c0c0 10px,
+        #c0c0c0 20px
     );
 }
 
+h1,h2,h3,h4 {
+    font-family: "Bitstream Vera Serif", Georgia, serif;
+}
+/**specifically for ranking bars **/
+h4 {
+    margin: 0.2em auto;
+    font-size: medium;
+}
+
 .content {
-    animation: slide_into 1.5s forwards;
-    overflow-x: hidden;
-    will-change: transform;
-    background-image: linear-gradient(to right, #88887755, #88887788);
-    height: 100%;
+    animation: fade_in 1.2s forwards;
+    background-color: #f0f0d0;
+    border: solid 4px #c0a0a0;
+    border-radius: 12px;
     width: 40em;
     min-width: 60%;
-    margin: 0;
-    margin-right: auto;
     padding: 1em;
-    padding-top: 4em;
+    margin: 2em auto;
+}
+
+img.icon {
+    display: block;
+    margin: 0 auto;
+    height: 2em;
+    width: 2em;
+}
+
+hr {
+    border: solid 2px #c0a0a0;
 }
 
 footer {
-    font-size: x-small;
+    font-size: small;
     padding: 1em;
     padding-top:4em;
 }
 
-@keyframes slide_into {
-    from {transform: translateX(-120%);}
-    to {transform: translateX(0%);}
+@keyframes fade_in {
+    from {filter: blur(80px)};
+    to {filter: blur(0px)};
+}
+
+/* this is a flex container for the ranking bars*/
+.ranking { 
+    margin: 0;
+    padding: 0 1em;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+div.ranking p {
+    font-size: small;
+    margin: 0 auto;
+}
+
+section {
+    margin: 0.6em 0.6em;
+}
+
+
+
+.ranking-bar {
+    width: 12em;
+    height: 1.2em; /* set the height of the ranking bar */
+    background-color: #ccc; /* set the background color of the ranking bar */
+    border-radius: 5px; /* add rounded corners to the ranking bar */
+}
+
+
+.ranking-bar-fill {
+    width: 50%; /* defaults to 50%. Override with inline css */
+    height: 100%; /* set the height of the filled portion of the ranking bar */
+    background-color: #ffc107; /* set the background color of the filled portion of the ranking bar */
+    border-radius: 5px; /* add rounded corners to the filled portion of the ranking bar */
+}
+
+.blue {
+    background-color: #8181ff;
 }
