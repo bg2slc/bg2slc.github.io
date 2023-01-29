@@ -18,13 +18,17 @@ body, html {
     );
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,h5 {
     font-family: "Bitstream Vera Serif", Georgia, serif;
 }
+h1 {
+    margin-left: 4em;
+}
 /**specifically for ranking bars **/
-h4 {
+h5 {
+    font-family: "Source Code Pro", "Courier New", "Open Sans", sans-serif;
     margin: 0.2em auto;
-    font-size: medium;
+    font-size: small;
 }
 
 .content {
@@ -56,8 +60,8 @@ footer {
 }
 
 @keyframes fade_in {
-    from {filter: blur(80px)};
-    to {filter: blur(0px)};
+    from {filter: blur(80px)}
+    to {filter: blur(0px)}
 }
 
 /* this is a flex container for the ranking bars*/
