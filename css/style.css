@@ -51,6 +51,13 @@ img.icon {
     width: 2em;
 }
 
+img.photo {
+    float: right;
+    max-height: 16rem;
+    width: auto;
+    border: solid 4px #c0a0a0;
+}
+
 hr {
     border: solid 2px #c0a0a0;
 }
